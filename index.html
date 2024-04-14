@@ -1,0 +1,144 @@
+User
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Aroma - Sabores e Conexões</title>
+    <body>
+        <header>
+            <h1>Café Aroma - Sabores e Conexões</h1>
+        </header>
+        <div class="container">
+            <img src="cafe.jpg" alt="Café Aroma" class="coffee-img">
+            
+            <h2>Redução de Custos:</h2>
+            <p>Após um processo de otimização em nossa cadeia de suprimentos e produção, estamos felizes em anunciar que conseguimos reduzir os custos de produção do nosso café em 15%! Essa economia nos permite continuar oferecendo produtos de alta qualidade a preços acessíveis para nossos clientes.</p>
+            
+            <img src="cafe2.jpg" alt="Curiosidades do Café" class="coffee-img">
+            
+            <h2>Curiosidade do Café:</h2>
+            <p>Você sabia que o café é a segunda bebida mais consumida no mundo, perdendo apenas para a água? Além disso, o café é originário da Etiópia, onde as primeiras plantas de café foram descobertas no século IX. Desde então, o café se espalhou pelo mundo e se tornou uma parte fundamental das culturas e rituais sociais em muitas sociedades.</p>
+            
+            <p>No Café Aroma, buscamos não apenas servir uma xícara de café, mas também criar um espaço onde as pessoas possam se conectar, relaxar e desfrutar de momentos especiais. Com a combinação de café de qualidade e acesso à internet, queremos oferecer uma experiência que seja verdadeiramente única e memorável para nossos clientes.</p>
+        </div>
+        <footer>
+            <p style="padding-bottom: 20px;">Entre em contato conosco: contato@cafe-aroma.com | (XX) XXXX-XXXX</p>
+        </footer>
+    
+        <div id="info-cafe"></div>
+    </body>
+    <script>
+        function mostrarEspresso() {
+            document.getElementById("info-cafe").innerHTML = `
+                <h2>Espresso</h2>
+                <p><strong>Descrição:</strong> Um café forte e concentrado, feito ao forçar água quente sob pressão através de grãos finamente moídos.</p>
+                <p><strong>Origem:</strong> Itália.</p>
+                <p><strong>Características:</strong> Intenso, encorpado e com uma camada espessa de crema.</p>
+            `;
+        }
+
+        function mostrarCafeLatte() {
+            document.getElementById("info-cafe").innerHTML = `
+                <h2>Café Latte</h2>
+                <p><strong>Descrição:</strong> Uma mistura de espresso e leite vaporizado, com uma pequena quantidade de espuma de leite na parte superior.</p>
+                <p><strong>Origem:</strong> Provavelmente Estados Unidos.</p>
+                <p><strong>Características:</strong> Suave, cremoso e com uma proporção mais alta de leite em relação ao café.</p>
+            `;
+        }
+
+        function mostrarColdBrew() {
+            document.getElementById("info-cafe").innerHTML = `
+                <h2>Café Cold Brew</h2>
+                <p><strong>Descrição:</strong> Café que é infundido a frio durante um longo período de tempo, geralmente de 12 a 24 horas.</p>
+                <p><strong>Origem:</strong> Origens precisas desconhecidas, mas popularizado em várias culturas.</p>
+                <p><strong>Características:</strong> Suave, menos ácido do que o café tradicional, com notas mais suaves e doces.</p>
+            `;
+        }
+    </script>
+
+    <h2 style="text-align: center;">Escolha seu Café:</h2>
+    <div style="text-align: center;">
+        <button class="cafe-button" onclick="mostrarEspresso()">Espresso</button>
+        <button class="cafe-button" onclick="mostrarCafeLatte()">Café Latte</button>
+        <button class="cafe-button" onclick="mostrarColdBrew()">Café Cold Brew</button>
+    </div>
+    <style>
+        /* Estilos dos botões */
+        .cafe-button {
+            background-color: #603811;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cafe-button:hover {
+            background-color: #734d32;
+        }
+
+        /* Outros estilos mantidos */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+
+        /* Outros estilos mantidos */
+        header {
+            background-color: #603811;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Outros estilos mantidos */
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+            text-align: justify;
+        }
+
+        /* Outros estilos mantidos */
+        h1, h2 {
+            color: #ffffff;
+        }
+
+        /* Outros estilos mantidos */
+        h2 {
+            color: #603811;
+        }
+
+        /* Outros estilos mantidos */
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        /* Outros estilos mantidos */
+        footer {
+            background-color: #603811;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+        }
+
+        /* Outros estilos mantidos */
+        .coffee-img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+</html>
